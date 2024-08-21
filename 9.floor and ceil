@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath> 
+using namespace std;
+int main() {
+    double number;
+    cout << "Enter a floating-point number: ";
+    cin >> number;
+    int roundedDown = floor(number);
+    int roundedUp = ceil(number);
+    cout << "Using floor: " << roundedDown << endl;
+    cout << "Using ceil: " << roundedUp << endl;
+    return 0;
+}
