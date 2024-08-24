@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int num1, num2;
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+    if (num1 < num2) {
+        swap(num1, num2);
+    }
+    int gcd = num2;
+    do {
+        if (num1 % gcd == 0 && num2 % gcd == 0) {
+            break; 
+        }
+        gcd--;
+    } while (gcd > 0);
+    cout << "GCD of " << num1 << " and " << num2 << " is: " << gcd << endl;
+    return 0;
+}
